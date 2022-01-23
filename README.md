@@ -19,3 +19,6 @@
 ## 1 - In order to run the application locally, first install postgresql and create relevant table and sequence by using sql files in the sql folder.
 ## 2 - When performing operations in application, please consider that, free version of Heroku used and heroku suspends the application after some time. This cause some performance issues.
 
+
+Deployed on: https://cryptic-peak-68524.herokuapp.com
+
