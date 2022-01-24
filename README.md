@@ -1,3 +1,8 @@
+Mikayil abdulayev
+Ilkin Ashrafli
+
+
+
 # PROJECT NAME: DEAL WARS
 
 # TEAM: GENCOOL
