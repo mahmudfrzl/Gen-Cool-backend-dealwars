@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/products")
 public class DealController {
 
     private ProductDetailService productDetailService;
@@ -20,17 +20,17 @@ public class DealController {
         this.productDetailService = productDetailService;
     }
 
-    @GetMapping("/getProduct")
+    @GetMapping
     List<ProductDetail> getProductList(@RequestParam(name = "userInput") String userInput) {
         return productDetailService.getProduct(userInput);
     }
 
-    @PostMapping("/searchProduct")
+    @PostMapping
     public void searchProduct(@Valid @RequestBody ProductRequest productRequest) {
         productDetailService.searchProduct(productRequest);
     }
 
-    @GetMapping("/getOffer")
+    @GetMapping
     Optional<Offer> getOffer(@RequestParam(name = "userInput") String userInput) {
         return productDetailService.getOffer(userInput);
     }
